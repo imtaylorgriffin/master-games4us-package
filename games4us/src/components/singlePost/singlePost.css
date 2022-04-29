@@ -1,0 +1,63 @@
+.singlePost{
+    flex: 9;
+}
+
+.singlePostWrapper{
+    padding: 20px;
+    padding-right: 0;
+}
+
+.singlePostImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.singlePostTitle{
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    font-size: 40px;
+}
+
+.singlePostDesc{
+    font-family: 'Akshar', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-indent: 10px;
+}
+
+.mcSC1{
+    
+    width: 80%;
+    display: block;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    
+    object-fit: fill; 
+    
+}
+.mcSC2{
+    width: 80%;
+    display: block;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    
+    object-fit: fill; 
+}
+
+.downloadButt{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    object-fit: fill;
+    cursor: pointer;
+}

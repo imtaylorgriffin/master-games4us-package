@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  app:
+    container_name: games4us
+    image: games4us
+    build:
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000

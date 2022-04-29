@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  app:
+    container_name: vue-example
+    image: vue
+    build:
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 8080:8080

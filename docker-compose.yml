@@ -1,0 +1,41 @@
+version: '3'
+services:
+
+  reverse-proxy:
+    image: nginx:1.17.10
+    container_name: reverse-proxy-nginx
+    depends_on:
+        - vue-example
+        - games4us
+    volumes:
+      - ./reverse-proxy-nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+
+
+
+  games4us:
+    image: games4us
+  #  depends_on:
+  #      - vue-example
+    container_name: games4us
+    build:
+      target: development
+      context: ./games4us
+   # volumes:
+   #   - ./src:/app/src
+    ports:
+      - 3000:3000
+
+
+  vue-example:
+    image: vue-example
+    container_name: vue-example
+    build:
+      target: development
+      context: ./vue-example
+   # volumes:
+   #   - ./src:/app/src
+    ports:
+      - 8080:8080
+  
